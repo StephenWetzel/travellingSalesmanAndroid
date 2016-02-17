@@ -1,0 +1,7 @@
+Stephen Wetzel
+smw347
+CS 275 Assignment 2, Traveling salesman
+
+This program takes several locations and finds the most efficient path that visits them all.  It uses the google maps directions matrix service to get a json result of travel times between all points.  It then parses that into a 2 dimensional array in Java.  It then uses the closest neighbor approach to find the fastest route between them.  In this method, the closest neighbor to the current point is the one chosen to travel to next.  This has the advantage of running n^2 time, as opposed to the factorial time that would be needed for a full search.  The disadvantage is that it is not guaranteed to find the fastest route.
+
+After the route if found, the steps are displayed in the app and the user has the option to open the route up in google maps and view the routes on a map and see the full turn by turn directions.
